@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download Tiger Teams</title>
+
+  <script>
+    function redirectUser() {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+      const appStoreUrl = "https://apps.apple.com/us/app/tiger-teams/id6615087707";
+      const playStoreUrl = "https://play.google.com/store/apps/details?id=com.fnoex.fan.hscasanluisobispo&hl=en_US";
+
+      if (/android/i.test(ua)) {
+        window.location.replace(playStoreUrl);
+      } else if (/iPad|iPhone|iPod/.test(ua)) {
+        window.location.replace(appStoreUrl);
+      }
+    }
+
+    window.onload = function () {
+      setTimeout(redirectUser, 300);
+    };
+  </script>
+</head>
+
+<body style="text-align:center; font-family:Arial; padding:40px;">
+  <h1>Download Tiger Teams</h1>
+  <p>Redirecting you...</p>
+
+  <p>If nothing happens:</p>
+  <a href="https://apps.apple.com/us/app/tiger-teams/id6615087707">iPhone</a><br><br>
+  <a href="https://play.google.com/store/apps/details?id=com.fnoex.fan.hscasanluisobispo&hl=en_US">Android</a>
+</body>
+</html>
